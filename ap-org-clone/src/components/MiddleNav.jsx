@@ -20,13 +20,13 @@ export default function MiddleNav() {
           </span>
         </div>
 
-        <span
+        <button
           color="navy "
           className="border-solid rounded px-1 self-center border-white border-2  mx-auto sm:mx-2 p-0 sm:mt-0 mt-2"
           size="xs"
         >
           Extend Your Hand
-        </span>
+        </button>
       </Navbar>
     </div>
   );
