@@ -20,7 +20,7 @@ export default function BottomNav() {
   }, []);
 
   return (
-    <nav class={`bg-white w-full h-auto border-gray-200 dark:bg-gray-900 flex justify-between items-center sm:px-2 md:px-3 ${isSticky ? 'fixed top-0 left-0  z-50' : ''}`}>
+    <nav class={`bg-white w-full h-auto border dark:bg-gray-900 flex justify-between items-center sm:px-2 md:px-3 ${isSticky ? 'fixed top-0 left-0  z-50' : ''}`}>
       <div class=" flex flex-wrap w-full items-center justify-between md:justify-start p-4 self-start">
         <a
           href="https://acharyaprashant.org/images/ic_videoseries.png"
