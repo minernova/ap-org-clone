@@ -3,11 +3,8 @@ import { Navbar, Button } from "flowbite-react";
 export default function MiddleNav() {
   return (
     <div>
-      <Navbar
-        fluid
-        className="bg-navy  text-white flex lg:justify-between "
-      >
-          <div className="flex justify-start">
+      <Navbar fluid className="bg-navy  text-white flex lg:justify-between ">
+        <div className="flex justify-start mx-auto md:mx-0 text"> 
           <svg
             className="w-4 mr-1 justify-self-start place-self-start mt-1"
             xmlns="http://www.w3.org/2000/svg"
@@ -20,13 +17,12 @@ export default function MiddleNav() {
           </svg>
           <span className="me-auto">
             Acharya Prashant is dedicated to building a brighter future for you.
-
           </span>
-          </div>
+        </div>
 
         <span
           color="navy "
-          className="border-solid rounded px-1 border-white border-2 mx-auto md:mx-2 p-0 md:mt-0 mt-2"
+          className="border-solid rounded px-1 self-center border-white border-2  mx-auto sm:mx-2 p-0 sm:mt-0 mt-2"
           size="xs"
         >
           Extend Your Hand
