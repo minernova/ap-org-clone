@@ -9,15 +9,15 @@ export default function HeroCard() {
 
       <div class="flex flex-col md:items-start items-center md:flex-row  ">
         <img
-          class="object-cover w-full md:w-2/5 shrink-0 rounded  "
+          class="object-cover w-full min-h-full lg:w-2/5 md:w-3/5 flex-shrink-0 rounded  "
           src="https://cimg.acharyaprashant.org/images/img-4337ee73-d8a3-4c8b-951b-d09a5a6468d3/10/image.jpg"
           alt=""
         ></img>
-        <div class="flex flex-col justify-start self-stretch mt-4   px-4 leading-normal">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <div class="flex flex-col justify-start self-stretch   px-4 ">
+          <h5 class="mb-2 text-xl font-semibold tracking-tight text-gray-700">
             संतों की सीख पर आधारित श्रृंखला
           </h5>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <p class="mb-3 font-light text-sm text-gray-700 tracking-wide">
             जब-जब समाज में धर्म के प्रति अनादर बढ़ा है और आम-आदमी की चेतना को
             पाखंड ने घेरा है, तब-तब संतों ने अपने वचनों से हमारे मन को शीतलता
             प्रदान की है और सामाजिक चेतना को शुद्ध किया है। इस श्रृंखला में
