@@ -1,12 +1,11 @@
 import React from "react";
 import SocialButtons from "./SocialButtons";
+import SectionHeading from "./SectionHeading";
 
 export default function HeroCard() {
   return (
-    <div className="px-10 mt-8">
-      <h2 class="text-3xl font-semibold mb-3 text-center md:text-left">
-        संतवाणी
-      </h2>
+    <div className="mt-8">
+      <SectionHeading label={"संतवाणी"}/>
 
       <div class="flex flex-col md:items-start items-center md:flex-row  ">
         <img
@@ -14,7 +13,7 @@ export default function HeroCard() {
           src="https://cimg.acharyaprashant.org/images/img-4337ee73-d8a3-4c8b-951b-d09a5a6468d3/10/image.jpg"
           alt=""
         ></img>
-        <div class="flex flex-col justify-start self-stretch mt-4 md:mt-0  px-4 leading-normal">
+        <div class="flex flex-col justify-start self-stretch mt-4   px-4 leading-normal">
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             संतों की सीख पर आधारित श्रृंखला
           </h5>
