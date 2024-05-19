@@ -1,9 +1,11 @@
 import React from "react";
 
 import SingleAccordian from "./SingleAccordian";
+import { useLoaderData } from "react-router-dom";
 
-const a=[1,2,3,4]
 export default function FAQAccordian() {
+  const {faqs}=useLoaderData();
+  // console.log(faqs);
   return (
     <>
       <div
@@ -11,12 +13,12 @@ export default function FAQAccordian() {
         data-accordion="collapse"
         className="w-full  lg:ms-32"
       >
-        {a.map(i=> {
-
-          return <>
-            <SingleAccordian key={i}/>
-              <hr className="mb-3"/>
-          </>
+        {faqs.map((faq,idx)=> {
+          // console.log(faq);
+          return <React.Fragment key={idx}> 
+          <SingleAccordian question={faq.question} answer={faq.answer}/>
+          <hr className="mb-3" />
+        </React.Fragment>
         }
         )}
       </div>
