@@ -5,7 +5,7 @@ import FAQSection from "../components/FAQSection";
 import { customFetch } from "../utils";
 
 const FAQurl="/faqs?language=english"
-const seriesURL="/series/optuser/course-series-d27351"
+const seriesURL="/series/optuser/course-series-eeb9d3"
 export const loader = async () => {
   const FAQresponse = await customFetch(FAQurl);
   const seriesResponse=await customFetch(seriesURL);

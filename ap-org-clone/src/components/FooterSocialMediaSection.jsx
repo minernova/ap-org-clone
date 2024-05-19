@@ -6,35 +6,36 @@ import FooterButtonFacebook from "./FooterButtonFacebook";
 import FooterButtonInstagram from "./FooterButtonInstagram";
 import FooterButtonWiki from "./FooterButtonWiki";
 import FooterButtonThreads from "./FooterButtonThreads";
+import { useTranslation } from "react-i18next";
 
 export default function FooterSocialMediaSection() {
+  const { t } = useTranslation();
   return (
-    <div className="">
-      <h2 class="mb-3 text-sm font-semibold uppercase text-white">Company</h2>
+    <div className="self-start">
+      <h2 class="mb-3 text-sm font-semibold uppercase text-white">
+        {t("social_media")}
+      </h2>
       <ul class="text-gray-400 font-medium">
         <li class="mb-1">
-          For English
+          {t("for_english")}
           <div className="flex">
-                <FooterButtonYoutube/>
-                <FooterButtonTwitter/>
-                <FooterButtonFacebook/>
-                <FooterButtonInstagram/>
-                <FooterButtonWiki/>
-
+            <FooterButtonYoutube />
+            <FooterButtonTwitter />
+            <FooterButtonFacebook />
+            <FooterButtonInstagram />
+            <FooterButtonWiki />
           </div>
         </li>
         <li class="mb-1">
-            For Hindi
+          {t("for_hindi")}
           <div className="flex">
-                <FooterButtonYoutube/>
-                <FooterButtonTwitter/>
-                <FooterButtonThreads/>
-                <FooterButtonFacebook/>
-                <FooterButtonInstagram/>
-
+            <FooterButtonYoutube />
+            <FooterButtonTwitter />
+            <FooterButtonThreads />
+            <FooterButtonFacebook />
+            <FooterButtonInstagram />
           </div>
         </li>
-       
       </ul>
     </div>
   );

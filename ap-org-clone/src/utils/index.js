@@ -1,4 +1,5 @@
 import axios from "axios";
+import { useTranslation } from "react-i18next";
 
 const productionUrl = "https://api.acharyaprashant.org/v2/legacy/courses";
 
@@ -7,11 +8,14 @@ export const customFetch = axios.create({
 });
 
 export const getDuration = (duration) => {
-  const hours =
-    Math.floor(duration) > 0 ? Math.floor(duration) + " hours " : "";
-  const minutes =
-    (duration - hours) * 60 > 0 ? +((duration - hours) * 60) + " minutes" : "";
-  return hours + minutes;
+  const { t } = useTranslation();
+  const hours=Math.floor(duration);
+  const minutes =Math.floor((duration - hours) * 60);
+  const hoursString=    Math.floor(duration) > 0 ? Math.floor(duration) + ` ${t('hours') }` : "";
+    console.log(((duration-hours)*60)>0);
+  const minutesString =
+    minutes > 0 ? ` ${minutes} ${t('minutes')}`  : "";
+  return hoursString +"  "+ minutesString;
 };
 
 export const customTheme = {

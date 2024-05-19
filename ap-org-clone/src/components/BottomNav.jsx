@@ -1,9 +1,11 @@
 import { Button, Navbar } from "flowbite-react";
 import React, { useEffect, useState } from "react";
 import SearchBar from "./SearchBar";
+import { useTranslation } from "react-i18next";
 
 export default function BottomNav() {
   const [isSticky, setSticky] = useState(false);
+  const {t}=useTranslation();
 
   const handleScroll = () => {
     if (window.scrollY > 100) {
@@ -34,7 +36,7 @@ export default function BottomNav() {
         </a>
         <SearchBar/>
       </div>
-        <Button className="bg-orange h-10 w-48 me-2 sm:me-5 ">  My Series</Button>
+        <Button className="bg-orange px-0 py-0 h-fit md:w-48 me-2 sm:me-5 ">{t('my_video_series')}</Button>
     </nav>
   );
 }

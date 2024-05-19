@@ -1,12 +1,14 @@
 import React from "react";
 import Link from "./Link";
 import { NavbarBrand } from "flowbite-react";
+import { useTranslation } from "react-i18next";
 
 export default function FooterContactSection() {
+  const {t}=useTranslation();
   return (
     <div className="">
       <h2 class="mb-3 text-sm font-semibold uppercase text-white">
-        Contact US
+        {t('contact_us')}
       </h2>
       <ul class="text-gray-400 font-medium">
         <li class="mb-5">

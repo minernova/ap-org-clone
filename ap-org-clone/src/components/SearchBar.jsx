@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next";
+
 export default function SearchBar() {
+  const { t } = useTranslation();
   return (
     <>
-      
       <form class="w-2/6">
         <div class="flex">
           <label
@@ -80,7 +82,7 @@ export default function SearchBar() {
               type="search"
               id="search-dropdown"
               class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 "
-              placeholder="Search for video series"
+              placeholder={t("search_for_video_series")}
               required
             />
             <button

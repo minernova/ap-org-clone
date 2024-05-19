@@ -1,74 +1,40 @@
-import React from "react";
-import { Dropdown, DropdownItem } from "flowbite-react";
-import Navbar from "./Navbar";
+import React, { useState } from "react";
 
-export default function NavbarDropdown() {
+const NavbarDropdown = ({ label, children }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <li>
+    <div className="relative inline-block text-left">
       <button
-        id="dropdownNavbarLink"
-        data-dropdown-toggle="dropdownNavbar"
-        class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto text-white  md:dark:hover:bg-transparent"
+        type="button"
+        className="inline-flex justify-center items-center rounded-md bg-orange-600 text-white shadow-sm "
+        onClick={() => setIsOpen(!isOpen)}
       >
-        Dropdown{" "}
+        {label}
         <svg
-          class="w-2.5 h-2.5 ms-2.5"
-          aria-hidden="true"
+          className="-mr-1 ml-2 h-5 w-5"
           xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 10 6"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
         >
           <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="m1 1 4 4 4-4"
+            fillRule="evenodd"
+            d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0l-4.25-4.25a.75.75 0 01.02-1.06z"
+            clipRule="evenodd"
           />
         </svg>
       </button>
-      <div
-        id="dropdownNavbar"
-        class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
-      >
-        <ul
-          class="py-2 text-sm text-gray-700 dark:text-gray-400"
-          aria-labelledby="dropdownLargeButton"
+      {isOpen && (
+        <div
+          className="origin-top-right absolute -right mt-2 z-20
+         rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
         >
-          <li>
-            <a
-              href="#"
-              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-            >
-              Dashboard
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-            >
-              Settings
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-            >
-              Earnings
-            </a>
-          </li>
-        </ul>
-        <div class="py-1">
-          <a
-            href="#"
-            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-          >
-            Sign out
-          </a>
+          <div className="py-1">{children}</div>
         </div>
-      </div>
-    </li>
+      )}
+    </div>
   );
-}
+};
+
+export default NavbarDropdown;
