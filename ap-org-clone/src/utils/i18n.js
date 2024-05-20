@@ -25,10 +25,13 @@ i18n
     },
   });
 
-function toggleLanguage() {
+export function toggleLanguage(language) {
+  i18n.changeLanguage(language);
+}
+
+export function currentLanguage() {
   const currentLanguage = i18n.language;
-  const newLanguage = currentLanguage === "en" ? "hi" : "en";
-  i18n.changeLanguage(newLanguage);
+  return (currentLanguage );
 }
 
 export default i18n;

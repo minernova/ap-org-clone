@@ -1,6 +1,8 @@
 import React from "react";
 import { Navbar, Button } from "flowbite-react";
+import { useTranslation } from "react-i18next";
 export default function MiddleNav() {
+  const {t}=useTranslation();
   return (
     <div>
       <Navbar fluid className="bg-navy  text-white flex lg:justify-between ">
@@ -16,7 +18,7 @@ export default function MiddleNav() {
             />
           </svg>
           <span className="me-auto">
-            Acharya Prashant is dedicated to building a brighter future for you.
+            {t('brighter_future')}
           </span>
         </div>
 
@@ -25,7 +27,7 @@ export default function MiddleNav() {
           className="border-solid rounded px-1 self-center border-white border-2  mx-auto sm:mx-2 p-0 sm:mt-0 mt-2"
           size="xs"
         >
-          Extend Your Hand
+          {t('extend_your_hand')}
         </button>
       </Navbar>
     </div>

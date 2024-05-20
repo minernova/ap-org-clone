@@ -15,6 +15,7 @@ import {
   HiOutlineArrowRight,
   HiUsers,
 } from "react-icons/hi";
+import LanguageSelector from "./LanguageSelector/LanguageSelector";
 
 export default function SideDrawer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,8 @@ export default function SideDrawer() {
   return (
     <>
       <div className=" flex ms-auto items-center justify-center ">
+      <LanguageSelector/>
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"

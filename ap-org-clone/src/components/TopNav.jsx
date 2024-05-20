@@ -4,6 +4,7 @@ import NavbarDropdown from "./NavbarDropdown";
 import SideDrawer from "./SideDrawer";
 import NavbarDropdownLink from "./NavbarDropdownLink";
 import { useTranslation } from "react-i18next";
+import LanguageSelector from "./LanguageSelector/LanguageSelector";
 
 export default function TopNav() {
   const { t } = useTranslation();
@@ -40,7 +41,6 @@ export default function TopNav() {
             <NavbarLink label={t("donate")} />
           </ul>
         </div>
-
         <SideDrawer />
       </div>
     </nav>
