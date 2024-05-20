@@ -1,5 +1,5 @@
 import React from "react";
-import BannerButton from "./BannerButton";
+import BannerButton from "../BottomBanner/BannerButton";
 import CourseCard from "./CourseCard";
 
 export default function CourseGrid({ courses }) {

@@ -1,7 +1,6 @@
 import React from "react";
 import FooterBottomSection from "./FooterBottomSection";
 import FooterTopSection from "./FooterTopSection";
-import LinkDropdown from "./NavbarDropdown";
 
 export default function Footer() {
   return (

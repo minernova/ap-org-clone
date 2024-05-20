@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import DropdownToggle from './DropdownToggle';
 import LanguageDropdown from './LanguageDropdown';
-import { toggleLanguage,currentLanguage} from './../../utils/i18n';
+import { toggleLanguage,currentLanguage} from '../../../../utils/i18n';
 
 const LanguageSelector = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,10 +1,10 @@
 import React from "react";
-import FooterLinksSection from "./FooterLinksSection";
-import FooterSocialMediaSection from "./FooterSocialMediaSection";
-import FooterDownloadSection from "./FooterDownloadSection";
-import FooterContactSection from "./FooterContactSection";
+import FooterLinksSection from "./section/FooterLinksSection";
+import FooterSocialMediaSection from "./section/FooterSocialMediaSection";
+import FooterDownloadSection from "./section/FooterDownloadSection";
+import FooterContactSection from "./section/FooterContactSection";
 import { useTranslation } from "react-i18next";
-import Link from "./Link";
+import Link from "../Link";
 
 export default function FooterTopSection() {
   const { t } = useTranslation();

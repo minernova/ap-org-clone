@@ -20,7 +20,7 @@
       "add_to_cart": "ADD TO CART",
       "enroll": "ENROLL",
       "faqs": "FAQs",
-      "cant_find_answer": "Can’t find the answer you’re looking for? Reach out to our .",
+      "cant_find_answer": "Can’t find the answer you’re looking for? Reach out to our ",
       "team":"team",
       "wisdom_content": "Wisdom Content",
       "learn_more": "Learn More",
@@ -42,7 +42,22 @@
       "ap_circle":"AP Circle",
       "my_video_series":"My Video Series",
       "brighter_future":"Acharya Prashant is dedicated to building a brighter future for you.",
-      "extend_your_hand":"Extend Your Hand"
+      "extend_your_hand":"Extend Your Hand",
+      "PAF": "PrashantAdvait Foundation",
+      "explore_categories": "EXPLORE CATEGORIES",
+      "vedant_upanishads": "Vedant - Upanishads",
+      "vedant_bhagavad_gita": "Vedant - Bhagavad Gita",
+      "other_scriptures": "Other Scriptures",
+      "saints_and_masters": "Saints and Masters",
+      "other_streams": "Other streams",
+      "life_questions": "Life Questions",
+      "technical_support": "Technical Support",
+      "my_ebooks": "My eBooks",
+      "recorded_sessions": "Recorded Sessions",
+      "my_cart": "My Cart",
+      "my_donations": "My Donations",
+      "my_orders": "My Orders",
+      "scholarship_requests": "Scholarship Requests"
     
   }
   

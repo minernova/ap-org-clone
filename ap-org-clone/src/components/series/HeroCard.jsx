@@ -19,7 +19,7 @@ export default function HeroCard() {
           src={`https://cimg.acharyaprashant.org/images/${series.thumbnail.id}/10/image.jpg`}
           alt=""
         ></img>
-        <div class="flex flex-col justify-start self-stretch   px-4 ">
+        <div class="flex flex-col justify-start self-stretch mt-10 md:mt-0  px-4 ">
           <h5 class="mb-2 text-xl font-semibold tracking-tight text-gray-700">
             {series.subtitle}
           </h5>

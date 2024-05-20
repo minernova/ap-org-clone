@@ -1,6 +1,6 @@
 import React from "react";
-import SectionHeading from "./SectionHeading";
-import SocialButtons from "./SocialButtons";
+import SectionHeading from "../series/SectionHeading";
+import SocialButtons from "../series/SocialButtons";
 import FAQAccordian from "./FAQAccordian";
 import AccordianSection from "./AccordianSection";
 import { useTranslation } from "react-i18next";

@@ -5,8 +5,8 @@ export default function MiddleNav() {
   const {t}=useTranslation();
   return (
     <div>
-      <Navbar fluid className="bg-navy  text-white flex lg:justify-between ">
-        <div className="flex justify-start mx-auto md:mx-0 text"> 
+      <Navbar fluid className="bg-navy align-middle  text-white flex lg:justify-between ">
+        <div className="flex justify-start text-center mx-auto  md:mx-0 text"> 
           <svg
             className="w-4 mr-1 justify-self-start place-self-start mt-1"
             xmlns="http://www.w3.org/2000/svg"
@@ -21,10 +21,11 @@ export default function MiddleNav() {
             {t('brighter_future')}
           </span>
         </div>
+        <div className="mx-2"></div>
 
         <button
           color="navy "
-          className="border-solid rounded px-1 self-center border-white border-2  mx-auto sm:mx-2 p-0 sm:mt-0 mt-2"
+          className="border-solid rounded px-1 self-center  border-white border-2   mx-auto sm:mx-2 p-0 sm:mt-0 mt-2"
           size="xs"
         >
           {t('extend_your_hand')}

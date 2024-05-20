@@ -1,16 +1,15 @@
 import React, { useTransition } from "react";
 import NavbarLink from "./NavbarLink";
-import NavbarDropdown from "./NavbarDropdown";
-import SideDrawer from "./SideDrawer";
-import NavbarDropdownLink from "./NavbarDropdownLink";
+import NavbarDropdown from "./dropdown/NavbarDropdown";
+import SideDrawer from "../sideDrawer/SideDrawer";
+import NavbarDropdownLink from "./dropdown/NavbarDropdownLink";
 import { useTranslation } from "react-i18next";
-import LanguageSelector from "./LanguageSelector/LanguageSelector";
 
 export default function TopNav() {
   const { t } = useTranslation();
   return (
     <nav class="bg-orange ">
-      <div class=" flex flex-wrap items-center   py-2 lg:py-0 px-4">
+      <div class=" flex flex-wrap items-center   py-2 lg:py-0 px-2 md:px-4">
         <a
           href="#"
           class="flex items-center space-x-3 mr-7 rtl:space-x-reverse"

@@ -6,7 +6,7 @@ import {
   AccordionPanel,
   AccordionTitle,
 } from "flowbite-react";
-import { customTheme } from "../utils";
+import { customTheme } from "../../utils";
 
 export default function SingleAccordian({ question, answer }) {
   return (

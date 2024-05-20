@@ -1,11 +1,10 @@
 import React from "react";
-import Link from "./Link";
-import FooterButtonYoutube from "./FooterButtonYoutube";
-import FooterButtonTwitter from "./FooterButtonTwitter";
-import FooterButtonFacebook from "./FooterButtonFacebook";
-import FooterButtonInstagram from "./FooterButtonInstagram";
-import FooterButtonWiki from "./FooterButtonWiki";
-import FooterButtonThreads from "./FooterButtonThreads";
+import FooterButtonYoutube from "../../footer/buttons/FooterButtonYoutube";
+import FooterButtonTwitter from "../../footer/buttons/FooterButtonTwitter";
+import FooterButtonFacebook from "../../footer/buttons/FooterButtonFacebook";
+import FooterButtonInstagram from "../../footer/buttons/FooterButtonInstagram";
+import FooterButtonWiki from "../../footer/buttons/FooterButtonWiki";
+import FooterButtonThreads from "../../footer/buttons/FooterButtonThreads";
 import { useTranslation } from "react-i18next";
 
 export default function FooterSocialMediaSection() {

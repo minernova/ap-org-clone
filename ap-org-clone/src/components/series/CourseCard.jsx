@@ -1,6 +1,6 @@
 import React from "react";
-import BannerButton from "./BannerButton";
-import { getDuration } from "../utils";
+import BannerButton from "../BottomBanner/BannerButton";
+import { getDuration } from "../../utils";
 import { useTranslation } from "react-i18next";
 
 export default function CourseCard({course}) {

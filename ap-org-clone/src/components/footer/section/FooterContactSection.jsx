@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "./Link";
 import { NavbarBrand } from "flowbite-react";
 import { useTranslation } from "react-i18next";
 
