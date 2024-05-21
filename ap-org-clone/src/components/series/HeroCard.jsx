@@ -3,6 +3,7 @@ import SocialButtons from "./SocialButtons";
 import SectionHeading from "./SectionHeading";
 import { useLoaderData } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import HeroImage from "./HeroImage";
 
 export default function HeroCard() {
   const { seriesData } = useLoaderData();
@@ -14,11 +15,7 @@ export default function HeroCard() {
       <SectionHeading label={series.title} />
 
       <div class="flex flex-col md:items-start items-center md:flex-row  ">
-        <img
-          class="object-cover w-full min-h-full lg:w-2/5 md:w-3/5 flex-shrink-0 rounded  "
-          src={`https://cimg.acharyaprashant.org/images/${series.thumbnail.id}/10/image.jpg`}
-          alt=""
-        ></img>
+        <HeroImage id={series.thumbnail.id}/>
         <div class="flex flex-col justify-start self-stretch mt-10 md:mt-0  px-4 ">
           <h5 class="mb-2 text-xl font-semibold tracking-tight text-gray-700">
             {series.subtitle}
